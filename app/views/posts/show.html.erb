@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<%= stylesheet_link_tag "style.css" %>
+
+  <div class="loginbtns header search">
+    <form class="search-form" action="search" method="get">
+      <input class="post-search" type="search" name="post-search" id="post-search" placeholder="Search Posts...">
+    </form>
+    <%= link_to '<button>Sign Up</button>'.html_safe, '/signup' %>
+    <%= link_to '<button>Log In</button>'.html_safe, '/login' %>
+    <%= link_to '<button style="background-color: red;">Log Out</button>'.html_safe, '/logout' %>
+  </div>
+
+<div class="post">
+  <h1 class="post-show-title">
+    <%= @post.title %>
+  </h1>
+  
+  <p class="post-show-body">
+    <%= @post.body %>
+  </p>
+  
+  <%= link_to '<button type="button" class="editbtn" style="background-color: rgb(12, 56, 170); color:white;">Edit</button>'.html_safe, edit_post_path(@post) %>
+  <%= link_to '<button type="button" class="backbtn" style="background-color: rgb(170, 13, 13); color:white;">Back</button>'.html_safe, posts_path %>
+</div>

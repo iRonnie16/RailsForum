@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<%= stylesheet_link_tag "style.css" %>
+<%= javascript_include_tag "script.js" %>
+
+<body>
+  <div class="loginbtns header search">
+    <form class="search-form" action="search" method="get">
+      <input class="post-search" type="search" name="post-search" id="post-search" placeholder="Search Posts...">
+    </form>
+    <%= link_to '<button>Sign Up</button>'.html_safe, '/signup' %>
+    <%= link_to '<button>Log In</button>'.html_safe, '/login' %>
+    <%= link_to '<button style="background-color: rgb(255, 35, 30);">Log Out</button>'.html_safe, '/logout' %>
+  </div>
+  
+  <h1 class="post-header">Recent Posts</h1>
+  
+  <% @posts.each do |post| %>
+    <h1 class="post-title"><%= link_to post.title, post %></h1>
+  <% end %>
+</body>
+
+<br>
+
+<div style="text-align:center;">
+  <%= link_to '<button type="button" name="search-button" class="new-button">New Post</button>'.html_safe, '/posts/new' %>
+</div>

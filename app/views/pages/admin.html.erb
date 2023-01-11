@@ -1,0 +1,40 @@
+<head>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+  <%= stylesheet_link_tag "style.css" %>
+</head>
+<form class="login-form" action="/action_page.php">
+  
+  <h1 class="login-header">Admin Login Page</h1>
+  
+  <div class="imgcontainer">
+    <img src="AdminAvatar.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>Admin Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Admin Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button class="loginbtn" type="submit">Login as admin</button>
+  </div>
+
+  <div class="container button" style="background-color:#444;">
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div>
+</form>
+
+<div class="Sign_Form">
+    <h1>Sign Up</h1>
+    <%= form_for :user, url: '/users' do |f| %>
+      <%= f.label :name, 'Username:' %></br> <%= f.text_field :name%> </p>
+      <%= f.label :email, 'Email:' %></br> <%= f.text_field :email%> </p>
+      <%= f.label :password, 'Password:' %></br> <%= f.password_field :password%></p>
+      <%= f.label :password, 'Confirm Password:' %></br> <%= f.password_field :password_confirmation%> </p>
+      <%= f.submit :Signup, :class => 'signup-button' %>
+    <% end %>
+  </div>
+
+</body>
+</html>

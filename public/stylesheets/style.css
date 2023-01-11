@@ -1,0 +1,250 @@
+@font-face {
+  font-family: mainFont;
+  src: url(https://fonts.googleapis.com/css?family=Righteous);
+}
+
+@font-face {
+  font-family: hFont;
+  src: url(https://fonts.googleapis.com/css?family=Arvo);
+}
+
+body {
+  margin: 0;
+  padding: 20px 0;
+  background-color: rgb(20, 20, 20);
+}
+
+.loginbtns button {
+  background-color: rgb(0, 155, 255);
+  width: 70px;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.post-header {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(0, 155, 255);
+  margin-bottom: 50px;
+}
+
+.search-f orm {
+  display: inline-block;
+}
+
+.post-title {
+  width: 50%;
+  margin: 15px auto;
+  text-align: center;
+  box-sizing: border-box;
+  border: 3px solid rgb(0, 155, 255);
+  border-radius: 12px;
+}
+
+.post-title a {
+  font-size: 110%;
+  line-height: 40px;
+  text-decoration: none;
+  color: rgb(192, 192, 192);
+}
+
+.post-title:hover a {
+  color: rgb(50, 50, 50);
+  background-color: rgb(20, 20, 20);
+}
+
+.header {
+  display: block;
+  text-align: right;
+  margin-right: 60px;
+  position: relative;
+  top: -30px;
+}
+
+.header .post-search {
+  top: 10px;
+  right: 20px;
+  width: 20%;
+  border-radius: 6px;
+  background-color: #eee;
+  font-weight: 600;
+  width: 200px;
+}
+
+.new-button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(0, 155, 255);
+  font-size: 200%;
+}
+
+.new-button {
+  text-decoration: none;
+  color: white;
+}
+
+.post {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.post-show-title {
+  font-size: 300%;
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(255,190,0);
+  line-height: 1.4em;
+}
+
+.post-show-body {
+  font-family: mainFont;
+  font-size: 240%;
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(170, 170, 170);
+  line-height: 1.2em;
+}
+
+.editbtn, .backbtn {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+}
+
+.Sign_Form h1 {
+  padding-top: 12px 
+}
+
+.Sign_Form p {
+  margin: 10px 25px;
+  text-align: left;
+  font-weight: 800;
+}
+
+.Sign_Form input[type=submit] {
+  margin-bottom: 10px;
+  box-shadow: none;
+}
+
+.Sign_Form {
+  border-radius: 10px;
+  background-color: #555;
+  color: rgb(0,155,255);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 0px;
+}
+
+.Sign_Form label {
+  text-align: left;
+  font-weight: 800;
+}
+
+.signup-button {
+  background-color: rgb(0,155,255);
+  font-size: 24px;
+  box-shadow: none;
+  border: none;
+  color: white;
+  width: 3.7em;
+  height: 2em;
+}
+
+.Sign_Form input {
+  border-radius: 7px;
+}
+
+/*----------------ADMIN PAGE-------------------*/
+.login-form {
+  width: 55%;
+  border-radius: 20px;
+  background-color: #444;
+  margin: auto;
+  color: rgb(255,190,0);
+}
+
+.login-header {
+  text-align: center;
+  padding-top: 15px;
+}
+
+input[type=text],  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.loginbtn, .cancelbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button {
+  text-align: center;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    padding-top: 15px;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+  border-radius: 0 0 20px 20px;
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 721px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    
+    form {
+      width: 80%;
+    }
+    
+    .cancelbtn {
+       width: 100%;
+    }
+}
